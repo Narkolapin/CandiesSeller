@@ -3,5 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CandiesSellerWPF.MainWindow"
         Title="MainWindow" Height="718" Width="1277">
-    <Image HorizontalAlignment="Left" Height="150" Margin="70,150,0,0" VerticalAlignment="Top" Width="150"/>
+    <Grid>
+        <Image x:Name="Image1" HorizontalAlignment="Left" Height="150" Margin="70,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\Skittles.jpg"/>
+        <Image x:Name="Image2" HorizontalAlignment="Left" Height="150" Margin="470,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\CottonCandy.jpg"/>
+        <Image x:Name="Image3" HorizontalAlignment="Left" Height="150" Margin="870,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\CreamEgg.jpg"/>
+        <Image x:Name="Image4" HorizontalAlignment="Left" Height="150" Margin="70,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\Jawbreaker.jpg"/>
+        <Image x:Name="Image5" HorizontalAlignment="Left" Height="150" Margin="470,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\RedvinesLicornes.jpg"/>
+        <Image x:Name="Image6" HorizontalAlignment="Left" Height="150" Margin="870,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\SugarDaddy.jpg"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="30" Margin="70,300,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="30" Margin="470,300,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="30" Margin="870,300,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="30" Margin="70,550,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="30" Margin="470,550,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="30" Margin="870,550,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="CandiesSeller" HorizontalAlignment="Left" Margin="70,50,0,0" VerticalAlignment="Top" Height="50" Width="550" FontSize="36" FontWeight="Medium" Foreground="#FF0068FF"/>
+
+    </Grid>
 </Window>
