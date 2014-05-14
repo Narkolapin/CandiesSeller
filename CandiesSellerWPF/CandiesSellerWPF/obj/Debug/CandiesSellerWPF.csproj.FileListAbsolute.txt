@@ -11,3 +11,16 @@ C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\
 C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.csproj.GenerateResource.Cache
 C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.exe
 C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\bin\Debug\CandiesSellerWPF.exe.config
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.exe
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\bin\Debug\CandiesSellerWPF.exe
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\bin\Debug\CandiesSellerWPF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.csprojResolveAssemblyReference.cache
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\MainWindow.baml
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\App.g.cs
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF_MarkupCompile.cache
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.g.resources
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.Properties.Resources.resources
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.csproj.GenerateResource.Cache

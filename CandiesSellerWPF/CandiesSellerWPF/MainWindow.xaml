@@ -8,12 +8,12 @@
             <ColumnDefinition Width="1252*"/>
             <ColumnDefinition Width="15*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="Image1" HorizontalAlignment="Left" Height="150" Margin="70,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\Skittles.jpg"/>
-        <Image x:Name="Image2" HorizontalAlignment="Left" Height="150" Margin="320,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\CottonCandy.jpg"/>
-        <Image x:Name="Image3" HorizontalAlignment="Left" Height="150" Margin="570,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\CreamEgg.jpg"/>
-        <Image x:Name="Image4" HorizontalAlignment="Left" Height="150" Margin="70,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\Jawbreaker.jpg"/>
-        <Image x:Name="Image5" HorizontalAlignment="Left" Height="150" Margin="320,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\RedvinesLicornes.jpg"/>
-        <Image x:Name="Image6" HorizontalAlignment="Left" Height="150" Margin="570,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Troy\Documents\CandySeller\CandiesSellerWPF\CandiesSellerWPF\images\SugarDaddy.jpg"/>
+        <Image x:Name="Image1" HorizontalAlignment="Left" Height="150" Margin="70,150,0,0" VerticalAlignment="Top" Width="150" Source="images\Skittles.jpg"/>
+        <Image x:Name="Image2" HorizontalAlignment="Left" Height="150" Margin="320,150,0,0" VerticalAlignment="Top" Width="150" Source="images\CottonCandy.jpg"/>
+        <Image x:Name="Image3" HorizontalAlignment="Left" Height="150" Margin="570,150,0,0" VerticalAlignment="Top" Width="150" Source="images\CreamEgg.jpg"/>
+        <Image x:Name="Image4" HorizontalAlignment="Left" Height="150" Margin="70,400,0,0" VerticalAlignment="Top" Width="150" Source="images\Jawbreaker.jpg"/>
+        <Image x:Name="Image5" HorizontalAlignment="Left" Height="150" Margin="320,400,0,0" VerticalAlignment="Top" Width="150" Source="images\RedvinesLicornes.jpg"/>
+        <Image x:Name="Image6" HorizontalAlignment="Left" Height="150" Margin="570,400,0,0" VerticalAlignment="Top" Width="150" Source="images\SugarDaddy.jpg"/>
         <Label x:Name="LSkittles" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="70,120,0,0" VerticalAlignment="Top" Width="150"/>
         <Label x:Name="LCottonCandy" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="320,120,0,0" VerticalAlignment="Top" Width="150"/>
         <Label x:Name="LCreamEgg" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="570,120,0,0" VerticalAlignment="Top" Width="150"/>
