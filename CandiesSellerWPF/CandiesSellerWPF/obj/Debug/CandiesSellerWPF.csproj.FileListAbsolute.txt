@@ -24,3 +24,6 @@ C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSe
 C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.g.resources
 C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.Properties.Resources.resources
 C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSeller WPF\CandiesSeller\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.csproj.GenerateResource.Cache
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWPF\bin\Debug\CandiesSellerWPF.exe.config
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.exe
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWPF\obj\Debug\CandiesSellerWPF.pdb

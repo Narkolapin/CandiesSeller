@@ -20,8 +20,10 @@ namespace CandiesSellerWCF.Data
         }
     
         public int Id { get; set; }
-        public string pseudo { get; set; }
-        public string password { get; set; }
+        public string nom { get; set; }
+        public string prenom { get; set; }
+        public string adresse { get; set; }
+        public string droit { get; set; }
     
         public virtual ICollection<order> order { get; set; }
     }

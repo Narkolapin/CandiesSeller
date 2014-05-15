@@ -3,8 +3,8 @@
   <EntityContainer Name="CandiesSellerEntities" p1:LazyLoadingEnabled="true">
     <EntitySet Name="item" EntityType="CandiesSellerModel.item" />
     <EntitySet Name="order" EntityType="CandiesSellerModel.order" />
-    <EntitySet Name="Price" EntityType="CandiesSellerModel.Price" />
     <EntitySet Name="stock" EntityType="CandiesSellerModel.stock" />
+    <EntitySet Name="Table" EntityType="CandiesSellerModel.Table" />
     <EntitySet Name="user" EntityType="CandiesSellerModel.user" />
     <AssociationSet Name="FK__order__id_user__1A14E395" Association="CandiesSellerModel.FK__order__id_user__1A14E395">
       <End Role="user" EntitySet="user" />
@@ -33,18 +33,6 @@
     <Property Name="id_user" Type="Int32" />
     <NavigationProperty Name="user" Relationship="CandiesSellerModel.FK__order__id_user__1A14E395" FromRole="order" ToRole="user" />
   </EntityType>
-  <EntityType Name="Price">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="Skittles_cost" Type="Int32" Nullable="false" />
-    <Property Name="cottoncandy_cost" Type="Int32" Nullable="false" />
-    <Property Name="creamegg_cost" Type="Int32" Nullable="false" />
-    <Property Name="jawbreaker_cost" Type="Int32" Nullable="false" />
-    <Property Name="redvinelicornes_cost" Type="Int32" Nullable="false" />
-    <Property Name="sugardaddy_cost" Type="Int32" Nullable="false" />
-  </EntityType>
   <EntityType Name="stock">
     <Key>
       <PropertyRef Name="Id" />
@@ -56,6 +44,24 @@
     <Property Name="jawbreaker" Type="Int32" Nullable="false" />
     <Property Name="redvinelicornes" Type="Int32" Nullable="false" />
     <Property Name="sugardaddy" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Skittles_cost" />
+      <PropertyRef Name="cottoncandy_cost" />
+      <PropertyRef Name="creamegg_cost" />
+      <PropertyRef Name="jawbreaker_cost" />
+      <PropertyRef Name="redvinelicornes_cost" />
+      <PropertyRef Name="sugardaddy_cost" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Skittles_cost" Type="Int32" Nullable="false" />
+    <Property Name="cottoncandy_cost" Type="Int32" Nullable="false" />
+    <Property Name="creamegg_cost" Type="Int32" Nullable="false" />
+    <Property Name="jawbreaker_cost" Type="Int32" Nullable="false" />
+    <Property Name="redvinelicornes_cost" Type="Int32" Nullable="false" />
+    <Property Name="sugardaddy_cost" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="user">
     <Key>

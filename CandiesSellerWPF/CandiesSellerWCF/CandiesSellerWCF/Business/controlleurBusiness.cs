@@ -16,6 +16,12 @@ namespace CandiesSellerWCF.Business
             monData = new dataContext();
         }
 
+
+        /*********************
+         * Price
+         * ********************/
+
+
         public stockBusiness getStock()
         {
             if (monData.getStock() != null)
@@ -29,6 +35,32 @@ namespace CandiesSellerWCF.Business
 
            return monData.setStock(convertBusiness.toStock(leStock));
 
+        }
+
+
+
+        /*********************
+         * Stock
+         * ********************/
+
+
+        public priceBusiness getPrice()
+        {
+            if (monData.getPrice() != null)
+                return convertBusiness.toPriceBusiness(monData.getPrice());
+            else
+                return null;
+        }
+
+
+        public bool setPrice(priceBusiness unPrice)
+        {
+            return monData.setPrice(convertBusiness.toPrice(unPrice));
+        }
+
+        public bool Connexion(string pseudo, string password)
+        {
+            return false;
         }
     }
 }

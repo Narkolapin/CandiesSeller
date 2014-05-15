@@ -27,6 +27,7 @@ namespace CandiesSellerWCF.Data
     
         public DbSet<item> item { get; set; }
         public DbSet<order> order { get; set; }
+        public DbSet<Price> Price { get; set; }
         public DbSet<stock> stock { get; set; }
         public DbSet<user> user { get; set; }
     }

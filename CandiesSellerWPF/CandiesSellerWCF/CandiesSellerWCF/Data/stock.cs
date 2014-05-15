@@ -21,11 +21,5 @@ namespace CandiesSellerWCF.Data
         public int jawbreaker { get; set; }
         public int redvinelicornes { get; set; }
         public int sugardaddy { get; set; }
-        public int Skittles_cost { get; set; }
-        public int cottoncandy_cost { get; set; }
-        public int creamegg_cost { get; set; }
-        public int jawbreaker_cost { get; set; }
-        public int redvinelicornes_cost { get; set; }
-        public int sugardaddy_cost { get; set; }
     }
 }

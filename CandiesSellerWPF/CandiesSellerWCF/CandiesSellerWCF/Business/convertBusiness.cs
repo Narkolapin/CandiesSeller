@@ -9,6 +9,10 @@ namespace CandiesSellerWCF.Business
 {
     public static class convertBusiness
     {
+        /***************************
+         * Stock Convert
+         * *************************/
+
         public static stockBusiness toStockBusiness(stock leStock)
         {
 
@@ -20,12 +24,7 @@ namespace CandiesSellerWCF.Business
                 redvinelicornes = leStock.redvinelicornes,
                 Skittles = leStock.Skittles,
                 sugardaddy = leStock.sugardaddy,
-                Skittles_cost = leStock.Skittles_cost,
-                cottoncandy_cost = leStock.cottoncandy_cost,
-                creamegg_cost = leStock.creamegg_cost,
-                jawbreaker_cost = leStock.jawbreaker_cost,
-                redvinelicornes_cost = leStock.redvinelicornes_cost,
-                sugardaddy_cost = leStock.sugardaddy_cost
+
             };
 
             return stockB;
@@ -42,15 +41,46 @@ namespace CandiesSellerWCF.Business
                redvinelicornes = leStock.redvinelicornes,
                Skittles = leStock.Skittles,
                sugardaddy = leStock.sugardaddy,
-               Skittles_cost = leStock.Skittles_cost,
-               cottoncandy_cost = leStock.cottoncandy_cost,
-               creamegg_cost = leStock.creamegg_cost,
-               jawbreaker_cost = leStock.jawbreaker_cost,
-               redvinelicornes_cost = leStock.redvinelicornes_cost,
-               sugardaddy_cost = leStock.sugardaddy_cost
              };
 
             return stockS;
+        }
+
+
+
+        /***************************
+         * Price Convert
+         * *************************/
+
+        public static priceBusiness toPriceBusiness(Price lePrice)
+        {
+            priceBusiness lePriceBusiness = new priceBusiness()
+            {
+
+                Skittle_price = lePrice.Skittles_cost,
+                cottoncandy_price = lePrice.cottoncandy_cost,
+                creamegg_price = lePrice.creamegg_cost,
+                jawbreaker_price = lePrice.jawbreaker_cost,
+                redvinelicornes_price = lePrice.redvinelicornes_cost,
+                sugardaddy_price = lePrice.sugardaddy_cost
+            };
+            return lePriceBusiness;
+        }
+
+
+        public static Price toPrice(priceBusiness lePrice)
+        {
+            Price lePriceData = new Price()
+            {
+                Skittles_cost = lePrice.Skittle_price,
+                cottoncandy_cost = lePrice.cottoncandy_price,
+                creamegg_cost = lePrice.creamegg_price,
+                jawbreaker_cost = lePrice.jawbreaker_price,
+                redvinelicornes_cost = lePrice.redvinelicornes_price,
+                sugardaddy_cost = lePrice.sugardaddy_price
+            };
+
+            return lePriceData;
         }
     }
 }
