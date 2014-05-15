@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="f8829ad76c944ee4be6a43ce969b3461" Name="Diagramme1">
-        <EntityTypeShape EntityType="CandiesSellerModel.item" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CandiesSellerModel.order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="CandiesSellerModel.Price" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CandiesSellerModel.stock" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CandiesSellerModel.user" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CandiesSellerModel.item" Width="1.5" PointX="1.375" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CandiesSellerModel.order" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CandiesSellerModel.Price" Width="1.5" PointX="3.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CandiesSellerModel.stock" Width="1.5" PointX="7.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CandiesSellerModel.user" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="CandiesSellerModel.FK__order__id_user__60A75C0F" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

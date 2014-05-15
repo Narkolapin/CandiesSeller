@@ -104,6 +104,13 @@ namespace CandiesSellerWCF.Data
                 uneOrder.id_user = monEntity.user.SingleOrDefault(c => c.nom == unUser.nom && c.prenom == unUser.prenom).Id;
                 monEntity.order.Add(uneOrder);
                 monEntity.SaveChanges();
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).jawbreaker =- uneOrder.jawbreaker;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).redvinelicornes =- uneOrder.redvinelicornes;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).Skittles =- uneOrder.Skittles;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).sugardaddy =- uneOrder.sugardaddy;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).cottoncandy =- uneOrder.cottoncandy;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).creamegg =- uneOrder.creamegg;
+                monEntity.SaveChanges();
                 return true;
             }
 
@@ -115,6 +122,13 @@ namespace CandiesSellerWCF.Data
                 monEntity.SaveChanges();
                 uneOrder.id_user = monEntity.user.SingleOrDefault(c => c.nom == unUser.nom && c.prenom == unUser.prenom).Id;
                 monEntity.order.Add(uneOrder);
+                monEntity.SaveChanges();
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).jawbreaker =- uneOrder.jawbreaker;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).redvinelicornes =- uneOrder.redvinelicornes;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).Skittles =- uneOrder.Skittles;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).sugardaddy =- uneOrder.sugardaddy;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).cottoncandy =- uneOrder.cottoncandy;
+                monEntity.stock.SingleOrDefault(c => c.Id == 1).creamegg =- uneOrder.creamegg;
                 monEntity.SaveChanges();
                 return true;
             }
