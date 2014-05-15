@@ -53,33 +53,33 @@
     <Compile Include="Business\controlleurBusiness.cs" />
     <Compile Include="Business\convertBusiness.cs" />
     <Compile Include="Business\stockBusiness.cs" />
+    <Compile Include="Data\candiesseller.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>candiesseller.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\candiesseller.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>candiesseller.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\candiesseller.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>candiesseller.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Data\dataContext.cs" />
     <Compile Include="Data\item.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>candiesseller.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\order.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>candiesseller.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\stock.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>candiesseller.tt</DependentUpon>
     </Compile>
     <Compile Include="Data\user.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>candiesseller.tt</DependentUpon>
     </Compile>
     <Compile Include="ICandies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,22 +87,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Data\Model1.edmx">
+    <EntityDeploy Include="Data\candiesseller.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>candiesseller.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Data\Model1.Context.tt">
+    <None Include="Data\candiesseller.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>candiesseller.edmx</DependentUpon>
+      <LastGenOutput>candiesseller.Context.cs</LastGenOutput>
     </None>
-    <None Include="Data\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="Data\candiesseller.edmx.diagram">
+      <DependentUpon>candiesseller.edmx</DependentUpon>
     </None>
-    <None Include="Data\Model1.tt">
+    <None Include="Data\candiesseller.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>candiesseller.edmx</DependentUpon>
+      <LastGenOutput>candiesseller.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

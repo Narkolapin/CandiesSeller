@@ -16,5 +16,7 @@ namespace CandiesSellerWCF
             controlleurBusiness monControlleur = new controlleurBusiness();
             return monControlleur.getStock();
         }
+
+        
     }
 }
