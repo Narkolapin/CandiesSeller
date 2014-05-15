@@ -83,14 +83,15 @@ namespace CandiesSellerWCF
                 jawbreaker_price = jawbreaker_cost_d,
                 redvinelicornes_price = redvinelicornes_cost_d,
                 sugardaddy_price = sugardaddy_cost_d
-            
             };
-
-
+            
             return monControlleur.setPrice(lePrice);
         }
-            
 
-        
+
+        public bool setOrder(userBusiness unUser, orderBusiness uneOrder)
+        {
+            return monControlleur.setOrder(unUser, uneOrder);
+        }
     }
 }

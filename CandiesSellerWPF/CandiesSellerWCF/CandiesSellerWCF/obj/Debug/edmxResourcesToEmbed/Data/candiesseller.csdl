@@ -6,7 +6,7 @@
     <EntitySet Name="Price" EntityType="CandiesSellerModel.Price" />
     <EntitySet Name="stock" EntityType="CandiesSellerModel.stock" />
     <EntitySet Name="user" EntityType="CandiesSellerModel.user" />
-    <AssociationSet Name="FK__order__id_user__1A14E395" Association="CandiesSellerModel.FK__order__id_user__1A14E395">
+    <AssociationSet Name="FK__order__id_user__60A75C0F" Association="CandiesSellerModel.FK__order__id_user__60A75C0F">
       <End Role="user" EntitySet="user" />
       <End Role="order" EntitySet="order" />
     </AssociationSet>
@@ -24,14 +24,14 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-    <Property Name="Skittles" Type="Int32" />
-    <Property Name="cottoncandy" Type="Int32" />
-    <Property Name="creamegg" Type="Int32" />
-    <Property Name="jawbreaker" Type="Int32" />
-    <Property Name="redvinelicornes" Type="Int32" />
-    <Property Name="sugardaddy" Type="Int32" />
-    <Property Name="id_user" Type="Int32" />
-    <NavigationProperty Name="user" Relationship="CandiesSellerModel.FK__order__id_user__1A14E395" FromRole="order" ToRole="user" />
+    <Property Name="Skittles" Type="Int32" Nullable="false" />
+    <Property Name="cottoncandy" Type="Int32" Nullable="false" />
+    <Property Name="creamegg" Type="Int32" Nullable="false" />
+    <Property Name="jawbreaker" Type="Int32" Nullable="false" />
+    <Property Name="redvinelicornes" Type="Int32" Nullable="false" />
+    <Property Name="sugardaddy" Type="Int32" Nullable="false" />
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="CandiesSellerModel.FK__order__id_user__60A75C0F" FromRole="order" ToRole="user" />
   </EntityType>
   <EntityType Name="Price">
     <Key>
@@ -66,10 +66,10 @@
     <Property Name="prenom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="adresse" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="droit" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
-    <NavigationProperty Name="order" Relationship="CandiesSellerModel.FK__order__id_user__1A14E395" FromRole="user" ToRole="order" />
+    <NavigationProperty Name="order" Relationship="CandiesSellerModel.FK__order__id_user__60A75C0F" FromRole="user" ToRole="order" />
   </EntityType>
-  <Association Name="FK__order__id_user__1A14E395">
-    <End Role="user" Type="CandiesSellerModel.user" Multiplicity="0..1" />
+  <Association Name="FK__order__id_user__60A75C0F">
+    <End Role="user" Type="CandiesSellerModel.user" Multiplicity="1" />
     <End Role="order" Type="CandiesSellerModel.order" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="user">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CandiesSellerWCF.Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -94,5 +95,33 @@ namespace CandiesSellerWCF.Data
             else
                 return false;
         }
-    }       
+
+        public bool setOrder(user unUser, order uneOrder)
+        {
+
+            if (monEntity.user.SingleOrDefault(c => c.nom == unUser.nom && c.prenom == unUser.prenom) != null)
+            {
+                uneOrder.id_user = monEntity.user.SingleOrDefault(c => c.nom == unUser.nom && c.prenom == unUser.prenom).Id;
+                monEntity.order.Add(uneOrder);
+                monEntity.SaveChanges();
+                return true;
+            }
+
+
+            else if (monEntity.user.SingleOrDefault(c => c.nom == unUser.nom && c.prenom == unUser.prenom) == null)
+            {
+                unUser.droit = "0";
+                monEntity.user.Add(unUser);
+                monEntity.SaveChanges();
+                uneOrder.id_user = monEntity.user.SingleOrDefault(c => c.nom == unUser.nom && c.prenom == unUser.prenom).Id;
+                monEntity.order.Add(uneOrder);
+                monEntity.SaveChanges();
+                return true;
+            }
+
+
+            else
+                return false;
+        }
+    } 
 }

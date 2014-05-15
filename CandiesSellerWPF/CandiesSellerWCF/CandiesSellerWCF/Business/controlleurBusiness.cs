@@ -58,6 +58,13 @@ namespace CandiesSellerWCF.Business
             return monData.setPrice(convertBusiness.toPrice(unPrice));
         }
 
+
+
+        public bool setOrder(userBusiness unUser, orderBusiness uneOrder)
+        {
+            return monData.setOrder(convertBusiness.toUser(unUser), convertBusiness.toOrder(uneOrder));
+        }
+
         public bool Connexion(string pseudo, string password)
         {
             return false;

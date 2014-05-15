@@ -82,5 +82,70 @@ namespace CandiesSellerWCF.Business
 
             return lePriceData;
         }
+
+
+        /***************************
+         * Order Convert
+         * *************************/
+
+
+        public static order toOrder(orderBusiness uneOrder)
+        {
+            order uneOrderData = new order()
+            {
+                cottoncandy = uneOrder.cottoncandy,
+                creamegg = uneOrder.creamegg,
+                jawbreaker = uneOrder.jawbreaker,
+                redvinelicornes = uneOrder.redvinelicornes,
+                Skittles = uneOrder.Skittles,
+                sugardaddy = uneOrder.sugardaddy
+            };
+
+            return uneOrderData;
+        }
+
+        public static orderBusiness toOrderBusiness(order uneOrder)
+        {
+            orderBusiness uneOrderBusiness = new orderBusiness()
+            {
+                cottoncandy = uneOrder.cottoncandy,
+                creamegg = uneOrder.creamegg,
+                jawbreaker = uneOrder.jawbreaker,
+                redvinelicornes = uneOrder.redvinelicornes,
+                Skittles = uneOrder.Skittles,
+                sugardaddy = uneOrder.sugardaddy
+            };
+
+            return uneOrderBusiness;
+        }
+
+        /***************************
+         * Price Convert
+         * *************************/
+
+        public static user toUser ( userBusiness unUser)
+        {
+            user userData = new user()
+            {
+                nom = unUser.nom,
+                prenom = unUser.prenom,
+                adresse = unUser.adresse
+            };
+
+            return userData;
+        }
+
+        public static userBusiness toUserBusiness( user unUser)
+        {
+            userBusiness userBusi = new userBusiness()
+            {
+                nom = unUser.nom,
+                prenom = unUser.prenom,
+                adresse = unUser.adresse
+            };
+             return userBusi;
+
+        }
+
     }
 }

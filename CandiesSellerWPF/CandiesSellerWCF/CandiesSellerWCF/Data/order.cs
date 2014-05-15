@@ -15,13 +15,13 @@ namespace CandiesSellerWCF.Data
     public partial class order
     {
         public int Id { get; set; }
-        public Nullable<int> Skittles { get; set; }
-        public Nullable<int> cottoncandy { get; set; }
-        public Nullable<int> creamegg { get; set; }
-        public Nullable<int> jawbreaker { get; set; }
-        public Nullable<int> redvinelicornes { get; set; }
-        public Nullable<int> sugardaddy { get; set; }
-        public Nullable<int> id_user { get; set; }
+        public int Skittles { get; set; }
+        public int cottoncandy { get; set; }
+        public int creamegg { get; set; }
+        public int jawbreaker { get; set; }
+        public int redvinelicornes { get; set; }
+        public int sugardaddy { get; set; }
+        public int id_user { get; set; }
     
         public virtual user user { get; set; }
     }
