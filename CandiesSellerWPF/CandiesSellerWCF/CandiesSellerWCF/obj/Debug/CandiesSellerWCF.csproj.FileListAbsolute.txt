@@ -7,3 +7,12 @@ E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\fr\EntityFrame
 E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.csprojResolveAssemblyReference.cache
 E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.dll
 E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.dll
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\CandiesSellerWCF.dll.config
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\CandiesSellerWCF.dll
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\CandiesSellerWCF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\EntityFramework.dll
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\EntityFramework.xml
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.csprojResolveAssemblyReference.cache

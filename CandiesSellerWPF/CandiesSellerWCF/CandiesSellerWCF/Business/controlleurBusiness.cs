@@ -9,15 +9,26 @@ namespace CandiesSellerWCF.Business
 {
     public class controlleurBusiness
     {
+        private dataContext monData { get; set; }
+
+        public controlleurBusiness()
+        {
+            monData = new dataContext();
+        }
 
         public stockBusiness getStock()
         {
-            dataContext monData = new dataContext();
-
             if (monData.getStock() != null)
                 return convertBusiness.toStockBusiness(monData.getStock());
             else
                 return null;
+        }
+
+        public bool setStock(stockBusiness leStock)
+        {
+
+           return monData.setStock(convertBusiness.toStock(leStock));
+
         }
     }
 }

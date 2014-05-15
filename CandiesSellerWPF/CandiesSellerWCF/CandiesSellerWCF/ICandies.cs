@@ -14,6 +14,9 @@ namespace CandiesSellerWCF
     {
         [OperationContract]
         stockBusiness getStock();
+
+        [OperationContract]
+        bool setStock(int Skittles_d, int cottoncandy_d, int creamegg_d, int jawbreaker_d, int redvinelicornes_d, int sugardaddy_d, int Skittles_cost_d, int cottoncandy_cost_d, int creamegg_cost_d, int jawbreaker_cost_d, int redvinelicornes_cost_d, int sugardaddy_cost_d);
         
     }
 }

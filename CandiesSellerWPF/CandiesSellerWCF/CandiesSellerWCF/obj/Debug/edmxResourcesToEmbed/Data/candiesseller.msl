@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CandiesSellerModelStoreContainer" CdmEntityContainer="CandiesSellerEntities">
+    <EntitySetMapping Name="item">
+      <EntityTypeMapping TypeName="CandiesSellerModel.item">
+        <MappingFragment StoreEntitySet="item">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="order">
+      <EntityTypeMapping TypeName="CandiesSellerModel.order">
+        <MappingFragment StoreEntitySet="order">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Skittles" ColumnName="Skittles" />
+          <ScalarProperty Name="cottoncandy" ColumnName="cottoncandy" />
+          <ScalarProperty Name="creamegg" ColumnName="creamegg" />
+          <ScalarProperty Name="jawbreaker" ColumnName="jawbreaker" />
+          <ScalarProperty Name="redvinelicornes" ColumnName="redvinelicornes" />
+          <ScalarProperty Name="sugardaddy" ColumnName="sugardaddy" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stock">
+      <EntityTypeMapping TypeName="CandiesSellerModel.stock">
+        <MappingFragment StoreEntitySet="stock">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Skittles" ColumnName="Skittles" />
+          <ScalarProperty Name="cottoncandy" ColumnName="cottoncandy" />
+          <ScalarProperty Name="creamegg" ColumnName="creamegg" />
+          <ScalarProperty Name="jawbreaker" ColumnName="jawbreaker" />
+          <ScalarProperty Name="redvinelicornes" ColumnName="redvinelicornes" />
+          <ScalarProperty Name="sugardaddy" ColumnName="sugardaddy" />
+          <ScalarProperty Name="Skittles_cost" ColumnName="Skittles_cost" />
+          <ScalarProperty Name="cottoncandy_cost" ColumnName="cottoncandy_cost" />
+          <ScalarProperty Name="creamegg_cost" ColumnName="creamegg_cost" />
+          <ScalarProperty Name="jawbreaker_cost" ColumnName="jawbreaker_cost" />
+          <ScalarProperty Name="redvinelicornes_cost" ColumnName="redvinelicornes_cost" />
+          <ScalarProperty Name="sugardaddy_cost" ColumnName="sugardaddy_cost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="CandiesSellerModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="pseudo" ColumnName="pseudo" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

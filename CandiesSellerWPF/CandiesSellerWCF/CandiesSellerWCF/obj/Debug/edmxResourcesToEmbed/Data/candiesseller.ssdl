@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CandiesSellerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CandiesSellerModelStoreContainer">
+    <EntitySet Name="item" EntityType="CandiesSellerModel.Store.item" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="order" EntityType="CandiesSellerModel.Store.order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="stock" EntityType="CandiesSellerModel.Store.stock" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="user" EntityType="CandiesSellerModel.Store.user" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__order__id_user__1A14E395" Association="CandiesSellerModel.Store.FK__order__id_user__1A14E395">
+      <End Role="user" EntitySet="user" />
+      <End Role="order" EntitySet="order" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="item">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="varchar" MaxLength="50" />
+    <Property Name="nombre" Type="int" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Skittles" Type="int" />
+    <Property Name="cottoncandy" Type="int" />
+    <Property Name="creamegg" Type="int" />
+    <Property Name="jawbreaker" Type="int" />
+    <Property Name="redvinelicornes" Type="int" />
+    <Property Name="sugardaddy" Type="int" />
+    <Property Name="id_user" Type="int" />
+  </EntityType>
+  <EntityType Name="stock">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Skittles" Type="int" Nullable="false" />
+    <Property Name="cottoncandy" Type="int" Nullable="false" />
+    <Property Name="creamegg" Type="int" Nullable="false" />
+    <Property Name="jawbreaker" Type="int" Nullable="false" />
+    <Property Name="redvinelicornes" Type="int" Nullable="false" />
+    <Property Name="sugardaddy" Type="int" Nullable="false" />
+    <Property Name="Skittles_cost" Type="int" Nullable="false" />
+    <Property Name="cottoncandy_cost" Type="int" Nullable="false" />
+    <Property Name="creamegg_cost" Type="int" Nullable="false" />
+    <Property Name="jawbreaker_cost" Type="int" Nullable="false" />
+    <Property Name="redvinelicornes_cost" Type="int" Nullable="false" />
+    <Property Name="sugardaddy_cost" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="pseudo" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__order__id_user__1A14E395">
+    <End Role="user" Type="CandiesSellerModel.Store.user" Multiplicity="0..1" />
+    <End Role="order" Type="CandiesSellerModel.Store.order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="order">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

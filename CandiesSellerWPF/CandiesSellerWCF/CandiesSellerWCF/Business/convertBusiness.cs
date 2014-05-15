@@ -14,13 +14,18 @@ namespace CandiesSellerWCF.Business
 
             stockBusiness stockB = new stockBusiness()
             {
-
                 cottoncandy = leStock.cottoncandy,
                 creamegg = leStock.creamegg,
                 jawbreaker = leStock.jawbreaker,
                 redvinelicornes = leStock.redvinelicornes,
                 Skittles = leStock.Skittles,
-                sugardaddy = leStock.sugardaddy
+                sugardaddy = leStock.sugardaddy,
+                Skittles_cost = leStock.Skittles_cost,
+                cottoncandy_cost = leStock.cottoncandy_cost,
+                creamegg_cost = leStock.creamegg_cost,
+                jawbreaker_cost = leStock.jawbreaker_cost,
+                redvinelicornes_cost = leStock.redvinelicornes_cost,
+                sugardaddy_cost = leStock.sugardaddy_cost
             };
 
             return stockB;
@@ -31,14 +36,19 @@ namespace CandiesSellerWCF.Business
         {
             stock stockS = new stock()
             {
-
-                cottoncandy = leStock.cottoncandy,
-                creamegg = leStock.creamegg,
-                jawbreaker = leStock.jawbreaker,
-                redvinelicornes = leStock.redvinelicornes,
-                Skittles = leStock.Skittles,
-                sugardaddy = leStock.sugardaddy
-            };
+               cottoncandy = leStock.cottoncandy,
+               creamegg = leStock.creamegg,
+               jawbreaker = leStock.jawbreaker,
+               redvinelicornes = leStock.redvinelicornes,
+               Skittles = leStock.Skittles,
+               sugardaddy = leStock.sugardaddy,
+               Skittles_cost = leStock.Skittles_cost,
+               cottoncandy_cost = leStock.cottoncandy_cost,
+               creamegg_cost = leStock.creamegg_cost,
+               jawbreaker_cost = leStock.jawbreaker_cost,
+               redvinelicornes_cost = leStock.redvinelicornes_cost,
+               sugardaddy_cost = leStock.sugardaddy_cost
+             };
 
             return stockS;
         }
