@@ -1,0 +1,9 @@
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\CandiesSellerWCF.dll.config
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\CandiesSellerWCF.dll
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\CandiesSellerWCF.pdb
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\EntityFramework.dll
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\EntityFramework.xml
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\fr\EntityFramework.resources.dll
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.csprojResolveAssemblyReference.cache
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.dll
+E:\IngeSup\Projets C#\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.pdb
