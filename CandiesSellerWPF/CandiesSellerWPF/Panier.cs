@@ -10,6 +10,8 @@ namespace CandiesSellerWPF
     {
         private double _QSkittles = 0;
 
+        public double PricePanier = 0;
+
         public double QSkittles
         {
             get { return _QSkittles; }

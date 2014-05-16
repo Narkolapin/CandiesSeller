@@ -60,7 +60,7 @@ namespace CandiesSellerWCF.Business
 
 
 
-        public bool setOrder(userBusiness unUser, orderBusiness uneOrder)
+        public bool setOrder(userBusiness unUser, Panier uneOrder)
         {
             return monData.setOrder(convertBusiness.toUser(unUser), convertBusiness.toOrder(uneOrder));
         }

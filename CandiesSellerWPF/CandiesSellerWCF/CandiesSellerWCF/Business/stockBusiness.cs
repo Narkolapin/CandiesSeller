@@ -8,17 +8,17 @@ namespace CandiesSellerWCF.Business
 {
     public class stockBusiness
     {
-        public int Skittles { get; set; }
-        public int cottoncandy { get; set; }
-        public int creamegg { get; set; }
-        public int jawbreaker { get; set; }
-        public int redvinelicornes { get; set; }
-        public int sugardaddy { get; set; }
-        public int Skittles_cost { get; set; }
-        public int cottoncandy_cost { get; set; }
-        public int creamegg_cost { get; set; }
-        public int jawbreaker_cost { get; set; }
-        public int redvinelicornes_cost { get; set; }
-        public int sugardaddy_cost { get; set; }
+        public double Skittles { get; set; }
+        public double cottoncandy { get; set; }
+        public double creamegg { get; set; }
+        public double jawbreaker { get; set; }
+        public double redvinelicornes { get; set; }
+        public double sugardaddy { get; set; }
+        public double Skittles_cost { get; set; }
+        public double cottoncandy_cost { get; set; }
+        public double creamegg_cost { get; set; }
+        public double jawbreaker_cost { get; set; }
+        public double redvinelicornes_cost { get; set; }
+        public double sugardaddy_cost { get; set; }
     }
 }

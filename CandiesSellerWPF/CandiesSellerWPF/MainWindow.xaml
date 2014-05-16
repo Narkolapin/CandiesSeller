@@ -3,57 +3,155 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CandiesSellerWPF.MainWindow"
         Title="CandiesSeller for Windows" Height="710" Width="1121" WindowStartupLocation="CenterScreen">
-    <Grid Margin="0,0,2,-4">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1252*"/>
-            <ColumnDefinition Width="15*"/>
-        </Grid.ColumnDefinitions>
-        <Image x:Name="Image1" HorizontalAlignment="Left" Height="150" Margin="70,150,0,0" VerticalAlignment="Top" Width="150" Source="images\Skittles.jpg"/>
-        <Image x:Name="Image2" HorizontalAlignment="Left" Height="150" Margin="320,150,0,0" VerticalAlignment="Top" Width="150" Source="images\CottonCandy.jpg"/>
-        <Image x:Name="Image3" HorizontalAlignment="Left" Height="150" Margin="570,150,0,0" VerticalAlignment="Top" Width="150" Source="images\CreamEgg.jpg"/>
-        <Image x:Name="Image4" HorizontalAlignment="Left" Height="150" Margin="70,400,0,0" VerticalAlignment="Top" Width="150" Source="images\Jawbreaker.jpg"/>
-        <Image x:Name="Image5" HorizontalAlignment="Left" Height="150" Margin="320,400,0,0" VerticalAlignment="Top" Width="150" Source="images\RedvinesLicornes.jpg"/>
-        <Image x:Name="Image6" HorizontalAlignment="Left" Height="150" Margin="570,400,0,0" VerticalAlignment="Top" Width="150" Source="images\SugarDaddy.jpg"/>
-        <Label x:Name="LSkittles" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="70,120,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LCottonCandy" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="320,120,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LCreamEgg" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="570,120,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LJawbreaker" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="70,370,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LRedvineLicornes" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="320,370,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LSugarDaddy" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="570,370,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label Content="CandiesSeller" HorizontalAlignment="Left" Margin="70,50,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF"/>
-        <Label x:Name="LPanier" Content="Panier" HorizontalAlignment="Left" Margin="788,120,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF"/>
-        <Label x:Name="LPriceSkittles" Content="--" HorizontalAlignment="Left" Height="30" Margin="70,300,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LPriceCottonCandy" Content="--" HorizontalAlignment="Left" Height="30" Margin="320,300,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LPriceCreamEgg" Content="--" HorizontalAlignment="Left" Height="30" Margin="570,300,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LPriceJawbreaker" Content="--" HorizontalAlignment="Left" Height="30" Margin="70,550,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LPriceRevineLicornes" Content="--" HorizontalAlignment="Left" Height="30" Margin="320,550,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LPriceSugarDaddy" Content="--" HorizontalAlignment="Left" Height="30" Margin="570,550,0,0" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="B100RedvineLicornes" Content="100G" HorizontalAlignment="Left" Margin="320,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GRedvineLicornes"/>
-        <Button x:Name="B100CottonCandy" Content="100G" HorizontalAlignment="Left" Margin="320,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GCottonCandy"/>
-        <Button x:Name="B100CreamEgg" Content="100G" HorizontalAlignment="Left" Margin="570,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GCreamEgg"/>
-        <Button x:Name="B100Jawbreaker" Content="100G" HorizontalAlignment="Left" Margin="70,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GJawbreaker"/>
-        <Button x:Name="B100Skittles" Content="100G" HorizontalAlignment="Left" Margin="70,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GSkittles"/>
-        <Button x:Name="B100SugarDaddy" Content="100G" HorizontalAlignment="Left" Margin="570,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GSugarDaddy"/>
-        <Button x:Name="B1Skittles" Content="1KG" HorizontalAlignment="Left" Margin="145,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGSkittles"/>
-        <Button x:Name="B1CottonCandy" Content="1KG" HorizontalAlignment="Left" Margin="395,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGCottonCandy"/>
-        <Button x:Name="B1CreamEgg" Content="1KG" HorizontalAlignment="Left" Margin="645,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGCreamEgg"/>
-        <Button x:Name="B1SugarDaddy" Content="1KG" HorizontalAlignment="Left" Margin="645,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGSugarDaddy"/>
-        <Button x:Name="B1RedvineLicornes" Content="1KG" HorizontalAlignment="Left" Margin="395,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGRedvineLicornes"/>
-        <Button x:Name="B1Jawbreaker" Content="1KG" HorizontalAlignment="Left" Margin="145,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGJawbreaker"/>
-        <Label x:Name="LQSkittles" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="788,170,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LQCottonCandy" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="788,200,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LQCreamEgg" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="788,230,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LQJawbreaker" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="788,260,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LQRedvineLicornes" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="788,290,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LQSugarDaddy" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="788,320,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="LQSkittles2" Content="--" HorizontalAlignment="Left" Margin="980,170,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LQCottonCandy2" Content="--" HorizontalAlignment="Left" Margin="980,200,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LQCreamEgg2" Content="--" HorizontalAlignment="Left" Margin="980,230,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LQJawbreaker2" Content="--" HorizontalAlignment="Left" Margin="980,260,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LQRedvineLicornes2" Content="--" HorizontalAlignment="Left" Margin="980,290,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LQSugarDaddy2" Content="--" HorizontalAlignment="Left" Margin="980,320,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="BCommande" Content="Commander" HorizontalAlignment="Left" Margin="788,400,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Bstocks" Content="Vérifier les stocks" HorizontalAlignment="Left" Margin="913,400,0,0" VerticalAlignment="Top" Width="105"/>
-
-    </Grid>
+    <TabControl HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="1121">
+        <TabItem Header="Connexion">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="87*"/>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="1014*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="LName" Content="Nom :" HorizontalAlignment="Left" Height="30" Margin="70,200,0,0" VerticalAlignment="Top" Width="50" Grid.ColumnSpan="3"/>
+                <Label x:Name="LMDP" Content="Mot de passe :" HorizontalAlignment="Left" Height="30" Margin="70,260,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="3"/>
+                <TextBox x:Name="TNom" Height="23" HorizontalAlignment="Left" Margin="23,200,0,0" VerticalAlignment="Top" Width="295" Grid.Column="2"/>
+                <TextBox x:Name="TMDP" Height="23" HorizontalAlignment="Left" Margin="73,260,0,0" VerticalAlignment="Top" Width="295" Grid.Column="2"/>
+                <Button x:Name="BConnexion" Content="Connexion" HorizontalAlignment="Left" Margin="503,220,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBoutonConnexion" Grid.Column="2"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Utilisateur">
+            <Grid Margin="0,0,2,-4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1252*"/>
+                    <ColumnDefinition Width="15*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Image1" HorizontalAlignment="Left" Height="150" Margin="70,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\Skittles.jpg"/>
+                <Image x:Name="Image2" HorizontalAlignment="Left" Height="150" Margin="320,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\CottonCandy.jpg"/>
+                <Image x:Name="Image3" HorizontalAlignment="Left" Height="150" Margin="570,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\CreamEgg.jpg"/>
+                <Image x:Name="Image4" HorizontalAlignment="Left" Height="150" Margin="70,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\Jawbreaker.jpg"/>
+                <Image x:Name="Image5" HorizontalAlignment="Left" Height="150" Margin="320,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\RedvinesLicornes.jpg"/>
+                <Image x:Name="Image6" HorizontalAlignment="Left" Height="150" Margin="570,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\SugarDaddy.jpg"/>
+                <Label x:Name="LSkittles" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="70,120,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LCottonCandy" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="320,120,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LCreamEgg" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="570,120,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LJawbreaker" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="70,370,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LRedvineLicornes" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="320,370,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LSugarDaddy" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="570,370,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label Content="CandiesSeller" HorizontalAlignment="Left" Margin="70,50,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF"/>
+                <Label x:Name="LPanier" Content="Panier" HorizontalAlignment="Left" Margin="788,120,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF"/>
+                <Label x:Name="LPriceSkittles" Content="--" HorizontalAlignment="Left" Height="30" Margin="70,300,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LPriceCottonCandy" Content="--" HorizontalAlignment="Left" Height="30" Margin="320,300,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LPriceCreamEgg" Content="--" HorizontalAlignment="Left" Height="30" Margin="570,300,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LPriceJawbreaker" Content="--" HorizontalAlignment="Left" Height="30" Margin="70,550,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LPriceRevineLicornes" Content="--" HorizontalAlignment="Left" Height="30" Margin="320,550,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LPriceSugarDaddy" Content="--" HorizontalAlignment="Left" Height="30" Margin="570,550,0,0" VerticalAlignment="Top" Width="150"/>
+                <Button x:Name="B100RedvineLicornes" Content="100G" HorizontalAlignment="Left" Margin="320,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GRedvineLicornes"/>
+                <Button x:Name="B100CottonCandy" Content="100G" HorizontalAlignment="Left" Margin="320,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GCottonCandy"/>
+                <Button x:Name="B100CreamEgg" Content="100G" HorizontalAlignment="Left" Margin="570,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GCreamEgg"/>
+                <Button x:Name="B100Jawbreaker" Content="100G" HorizontalAlignment="Left" Margin="70,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GJawbreaker"/>
+                <Button x:Name="B100Skittles" Content="100G" HorizontalAlignment="Left" Margin="70,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GSkittles"/>
+                <Button x:Name="B100SugarDaddy" Content="100G" HorizontalAlignment="Left" Margin="570,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton100GSugarDaddy"/>
+                <Button x:Name="B1Skittles" Content="1KG" HorizontalAlignment="Left" Margin="145,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGSkittles"/>
+                <Button x:Name="B1CottonCandy" Content="1KG" HorizontalAlignment="Left" Margin="395,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGCottonCandy"/>
+                <Button x:Name="B1CreamEgg" Content="1KG" HorizontalAlignment="Left" Margin="645,330,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGCreamEgg"/>
+                <Button x:Name="B1SugarDaddy" Content="1KG" HorizontalAlignment="Left" Margin="645,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGSugarDaddy"/>
+                <Button x:Name="B1RedvineLicornes" Content="1KG" HorizontalAlignment="Left" Margin="395,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGRedvineLicornes"/>
+                <Button x:Name="B1Jawbreaker" Content="1KG" HorizontalAlignment="Left" Margin="145,580,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="OnClickBouton1KGJawbreaker"/>
+                <Label x:Name="LQSkittles" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="788,170,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LQCottonCandy" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="788,200,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LQCreamEgg" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="788,230,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LQJawbreaker" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="788,260,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LQRedvineLicornes" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="788,290,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LQSugarDaddy" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="788,320,0,0" VerticalAlignment="Top" Width="150"/>
+                <Label x:Name="LQSkittles2" Content="--" HorizontalAlignment="Left" Margin="980,170,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="LQCottonCandy2" Content="--" HorizontalAlignment="Left" Margin="980,200,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="LQCreamEgg2" Content="--" HorizontalAlignment="Left" Margin="980,230,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="LQJawbreaker2" Content="--" HorizontalAlignment="Left" Margin="980,260,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="LQRedvineLicornes2" Content="--" HorizontalAlignment="Left" Margin="980,290,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="LQSugarDaddy2" Content="--" HorizontalAlignment="Left" Margin="980,320,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="BCommande" Content="Commander" HorizontalAlignment="Left" Margin="788,400,0,0" VerticalAlignment="Top" Width="75" Click="OnClickBCommand"/>
+                <Button x:Name="Bstocks" Content="Vérifier les stocks" HorizontalAlignment="Left" Margin="913,400,0,0" VerticalAlignment="Top" Width="105"/>
+                <Label x:Name="LTotal" Content="Total :" HorizontalAlignment="Left" Height="30" Margin="788,352,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.387,1.5"/>
+                <Label x:Name="LPricePanier" Content="--" HorizontalAlignment="Left" Margin="980,352,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TBNom" HorizontalAlignment="Left" Height="23" Margin="788,474,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top" Width="269" Visibility="Hidden"/>
+                <TextBox x:Name="TBFirstName" HorizontalAlignment="Left" Height="23" Margin="788,514,0,0" TextWrapping="Wrap" Text="Prénom" VerticalAlignment="Top" Width="269" TextChanged="TBNom_Copy_TextChanged" Visibility="Hidden"/>
+                <TextBox x:Name="TBAdresse" HorizontalAlignment="Left" Height="23" Margin="788,552,0,0" TextWrapping="Wrap" Text="Adresse 2" VerticalAlignment="Top" Width="269" Visibility="Hidden"/>
+                <Button x:Name="BValidation" Content="Valider" HorizontalAlignment="Left" Margin="884,603,0,0" VerticalAlignment="Top" Width="75" Click="OnClickBValidation" Visibility="Hidden"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Administrateur">
+            <Grid Margin="0,0,2,-4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="24*"/>
+                    <ColumnDefinition Width="1076*"/>
+                    <ColumnDefinition Width="13*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Image7" HorizontalAlignment="Left" Height="150" Margin="45.657,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\Skittles.jpg" Grid.Column="1"/>
+                <Image x:Name="Image8" HorizontalAlignment="Left" Height="150" Margin="295.657,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\CottonCandy.jpg" Grid.Column="1"/>
+                <Image x:Name="Image9" HorizontalAlignment="Left" Height="150" Margin="545.657,150,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\CreamEgg.jpg" Grid.Column="1"/>
+                <Image x:Name="Image10" HorizontalAlignment="Left" Height="150" Margin="45.657,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\Jawbreaker.jpg" Grid.Column="1"/>
+                <Image x:Name="Image11" HorizontalAlignment="Left" Height="150" Margin="295.657,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\RedvinesLicornes.jpg" Grid.Column="1"/>
+                <Image x:Name="Image12" HorizontalAlignment="Left" Height="150" Margin="545.657,400,0,0" VerticalAlignment="Top" Width="150" Source="C:\Users\Adrix\Desktop\CandiesSellerWPF\images\SugarDaddy.jpg" Grid.Column="1"/>
+                <Label x:Name="LSkittles2" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="45.657,120,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LCottonCandy2" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="295.657,120,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LCreamEgg2" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="545.657,120,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LJawbreaker2" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="45.657,370,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LRedvineLicornes2" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="295.657,370,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LSugarDaddy2" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="545.657,370,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label Content="CandiesSeller" HorizontalAlignment="Left" Margin="45.657,50,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF" Grid.Column="1"/>
+                <Label x:Name="LStockInitial" Content="Stock initial" HorizontalAlignment="Left" Margin="763.657,120,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF" Grid.Column="1"/>
+                <Label x:Name="LPriceSkittles2" Content="--" HorizontalAlignment="Left" Height="30" Margin="45.657,300,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LPriceCottonCandy2" Content="--" HorizontalAlignment="Left" Height="30" Margin="295.657,300,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LPriceCreamEgg2" Content="--" HorizontalAlignment="Left" Height="30" Margin="545.657,300,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LPriceJawbreaker2" Content="--" HorizontalAlignment="Left" Height="30" Margin="45.657,550,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LPriceRevineLicornes2" Content="--" HorizontalAlignment="Left" Height="30" Margin="295.657,550,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LPriceSugarDaddy2" Content="--" HorizontalAlignment="Left" Height="30" Margin="545.657,550,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LStockFinal" Content="Stock final" HorizontalAlignment="Left" Margin="763.657,380,0,0" VerticalAlignment="Top" Height="50" Width="230" FontSize="28" FontWeight="Medium" Foreground="#FF0068FF" Grid.Column="1"/>
+                <Button x:Name="B100RedvineLicornes2" Content="100G" HorizontalAlignment="Left" Margin="295.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton100GRedvineLicornes2" Grid.Column="1"/>
+                <Button x:Name="B100CottonCandy2" Content="100G" HorizontalAlignment="Left" Margin="295.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton100GCottonCandy2" Grid.Column="1"/>
+                <Button x:Name="B100CreamEgg2" Content="100G" HorizontalAlignment="Left" Margin="545.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton100GCreamEgg2" Grid.Column="1"/>
+                <Button x:Name="B100Jawbreaker2" Content="100G" HorizontalAlignment="Left" Margin="45.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton100GJawbreaker2" Grid.Column="1"/>
+                <Button x:Name="B100Skittles2" Content="100G" HorizontalAlignment="Left" Margin="45.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton100GSkittles2" Grid.Column="1"/>
+                <Button x:Name="B100SugarDaddy2" Content="100G" HorizontalAlignment="Left" Margin="545.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton100GSugarDaddy2" Grid.Column="1"/>
+                <Button x:Name="B1Skittles2" Content="1KG" HorizontalAlignment="Left" Margin="95.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton1KGSkittles2" Grid.Column="1"/>
+                <Button x:Name="B1CottonCandy2" Content="1KG" HorizontalAlignment="Left" Margin="345.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton1KGCottonCandy2" Grid.Column="1"/>
+                <Button x:Name="B1CreamEgg2" Content="1KG" HorizontalAlignment="Left" Margin="595.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton1KGCreamEgg2" Grid.Column="1"/>
+                <Button x:Name="B1SugarDaddy2" Content="1KG" HorizontalAlignment="Left" Margin="595.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton1KGSugarDaddy2" Grid.Column="1"/>
+                <Button x:Name="B1RedvineLicornes2" Content="1KG" HorizontalAlignment="Left" Margin="345.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton1KGRedvineLicornes2" Grid.Column="1"/>
+                <Button x:Name="B1Jawbreaker2" Content="1KG" HorizontalAlignment="Left" Margin="95.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickBouton1KGJawbreaker2" Grid.Column="1"/>
+                <Button x:Name="BManuelSkittles" Content="Manuel" HorizontalAlignment="Left" Margin="145.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickManuelSkittles" Grid.Column="1"/>
+                <Button x:Name="BManuelCottonCandy" Content="Manuel" HorizontalAlignment="Left" Margin="395.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickManuelCottonCandy" Grid.Column="1"/>
+                <Button x:Name="BManuelCreamEgg" Content="Manuel" HorizontalAlignment="Left" Margin="645.657,330,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickManuelCreamEgg" Grid.Column="1"/>
+                <Button x:Name="BManuelJawBreaker" Content="Manuel" HorizontalAlignment="Left" Margin="145.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickManuelJawBreaker" Grid.Column="1"/>
+                <Button x:Name="BManuelRedvineLicornes" Content="Manuel" HorizontalAlignment="Left" Margin="395.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickManuelRedvineLicornes" Grid.Column="1"/>
+                <Button x:Name="BManuelSugarSaddy" Content="Manuel" HorizontalAlignment="Left" Margin="645.657,580,0,0" VerticalAlignment="Top" Width="50" Height="35" Click="OnClickManuelSugarDaddy" Grid.Column="1"/>
+                <Label x:Name="LQSkittlesP" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="763.657,170,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQCottonCandyP" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="763.657,200,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQCreamEggP" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="763.657,230,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQJawbreakerP" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="763.657,260,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQRedvineLicornesP" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="763.657,290,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQSugarDaddyP" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="763.657,320,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQSkittlesD" Content="--" HorizontalAlignment="Left" Margin="955.657,170,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQCottonCandyD" Content="--" HorizontalAlignment="Left" Margin="955.657,200,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQCreamEggD" Content="--" HorizontalAlignment="Left" Margin="955.657,230,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQJawbreakerD" Content="--" HorizontalAlignment="Left" Margin="955.657,260,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQRedvineLicornesD" Content="--" HorizontalAlignment="Left" Margin="955.657,290,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQSugarDaddyD" Content="--" HorizontalAlignment="Left" Margin="955.657,320,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQSkittles3" Content="Skittles" HorizontalAlignment="Left" Height="30" Margin="763.657,430,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQCottonCandy3" Content="CottonCandy" HorizontalAlignment="Left" Height="30" Margin="763.657,460,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQCreamEgg3" Content="CreamEgg" HorizontalAlignment="Left" Height="30" Margin="763.657,490,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQJawbreaker3" Content="Jawbreaker" HorizontalAlignment="Left" Height="30" Margin="763.657,520,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQRedvineLicornes3" Content="RedvineLicornes" HorizontalAlignment="Left" Height="30" Margin="763.657,550,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQSugarDaddy3" Content="SugarDaddy" HorizontalAlignment="Left" Height="30" Margin="763.657,580,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
+                <Label x:Name="LQSkittles4" Content="--" HorizontalAlignment="Left" Margin="955.657,430,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQCottonCandy4" Content="--" HorizontalAlignment="Left" Margin="955.657,460,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQCreamEgg4" Content="--" HorizontalAlignment="Left" Margin="955.657,490,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQJawbreaker4" Content="--" HorizontalAlignment="Left" Margin="955.657,520,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQRedvineLicornes4" Content="--" HorizontalAlignment="Left" Margin="955.657,550,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LQSugarDaddy4" Content="--" HorizontalAlignment="Left" Margin="955.657,580,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="LAjout" Content="Ajouter le poids manuellement en kilo:" HorizontalAlignment="Left" Margin="525.657,24,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <TextBox x:Name="AjoutManuel" Height="23" HorizontalAlignment="Left" Margin="755,24,0,0" VerticalAlignment="Top" Width="295" Grid.Column="1"/>
+                <Button x:Name="BMiseAJour" Content="Mise a jour" HorizontalAlignment="Left" Margin="955,610,0,0" VerticalAlignment="Top" Width="70" Height="25" Click="OnClickBoutonMAJ" Grid.Column="1"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
 </Window>

@@ -16,7 +16,7 @@ namespace CandiesSellerWCF
         stockBusiness getStock();
 
         [OperationContract]
-        bool setStock(int Skittles_d, int cottoncandy_d, int creamegg_d, int jawbreaker_d, int redvinelicornes_d, int sugardaddy_d);
+        bool setStock(double Skittles_d, double cottoncandy_d, double creamegg_d, double jawbreaker_d, double redvinelicornes_d, double sugardaddy_d);
 
         [OperationContract]
         priceBusiness getPrice();
@@ -28,7 +28,7 @@ namespace CandiesSellerWCF
         //[OperationContract]
         //void setOrder(string nom, string prenom, string adresse, int prix);
         [OperationContract]
-        bool setOrder(userBusiness unUser, orderBusiness uneOrder);
+        bool setOrder(userBusiness unUser, Panier uneOrder);
         
     }
 }

@@ -29,12 +29,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Skittles" Type="int" Nullable="false" />
-          <Property Name="cottoncandy" Type="int" Nullable="false" />
-          <Property Name="creamegg" Type="int" Nullable="false" />
-          <Property Name="jawbreaker" Type="int" Nullable="false" />
-          <Property Name="redvinelicornes" Type="int" Nullable="false" />
-          <Property Name="sugardaddy" Type="int" Nullable="false" />
+          <Property Name="Skittles" Type="float" Nullable="false" />
+          <Property Name="cottoncandy" Type="float" Nullable="false" />
+          <Property Name="creamegg" Type="float" Nullable="false" />
+          <Property Name="jawbreaker" Type="float" Nullable="false" />
+          <Property Name="redvinelicornes" Type="float" Nullable="false" />
+          <Property Name="sugardaddy" Type="float" Nullable="false" />
           <Property Name="id_user" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Price">
@@ -54,12 +54,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="Skittles" Type="int" Nullable="false" />
-          <Property Name="cottoncandy" Type="int" Nullable="false" />
-          <Property Name="creamegg" Type="int" Nullable="false" />
-          <Property Name="jawbreaker" Type="int" Nullable="false" />
-          <Property Name="redvinelicornes" Type="int" Nullable="false" />
-          <Property Name="sugardaddy" Type="int" Nullable="false" />
+          <Property Name="Skittles" Type="float" Nullable="false" />
+          <Property Name="cottoncandy" Type="float" Nullable="false" />
+          <Property Name="creamegg" Type="float" Nullable="false" />
+          <Property Name="jawbreaker" Type="float" Nullable="false" />
+          <Property Name="redvinelicornes" Type="float" Nullable="false" />
+          <Property Name="sugardaddy" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="user">
           <Key>
@@ -112,12 +112,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-          <Property Name="Skittles" Type="Int32" Nullable="false" />
-          <Property Name="cottoncandy" Type="Int32" Nullable="false" />
-          <Property Name="creamegg" Type="Int32" Nullable="false" />
-          <Property Name="jawbreaker" Type="Int32" Nullable="false" />
-          <Property Name="redvinelicornes" Type="Int32" Nullable="false" />
-          <Property Name="sugardaddy" Type="Int32" Nullable="false" />
+          <Property Name="Skittles" Type="Double" Nullable="false" />
+          <Property Name="cottoncandy" Type="Double" Nullable="false" />
+          <Property Name="creamegg" Type="Double" Nullable="false" />
+          <Property Name="jawbreaker" Type="Double" Nullable="false" />
+          <Property Name="redvinelicornes" Type="Double" Nullable="false" />
+          <Property Name="sugardaddy" Type="Double" Nullable="false" />
           <Property Name="id_user" Type="Int32" Nullable="false" />
           <NavigationProperty Name="user" Relationship="CandiesSellerModel.FK__order__id_user__60A75C0F" FromRole="order" ToRole="user" />
         </EntityType>
@@ -138,12 +138,12 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
-          <Property Name="Skittles" Type="Int32" Nullable="false" />
-          <Property Name="cottoncandy" Type="Int32" Nullable="false" />
-          <Property Name="creamegg" Type="Int32" Nullable="false" />
-          <Property Name="jawbreaker" Type="Int32" Nullable="false" />
-          <Property Name="redvinelicornes" Type="Int32" Nullable="false" />
-          <Property Name="sugardaddy" Type="Int32" Nullable="false" />
+          <Property Name="Skittles" Type="Double" Nullable="false" />
+          <Property Name="cottoncandy" Type="Double" Nullable="false" />
+          <Property Name="creamegg" Type="Double" Nullable="false" />
+          <Property Name="jawbreaker" Type="Double" Nullable="false" />
+          <Property Name="redvinelicornes" Type="Double" Nullable="false" />
+          <Property Name="sugardaddy" Type="Double" Nullable="false" />
         </EntityType>
         <EntityType Name="user">
           <Key>

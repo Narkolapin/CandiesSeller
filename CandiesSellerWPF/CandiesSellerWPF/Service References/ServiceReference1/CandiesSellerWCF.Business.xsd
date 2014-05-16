@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CandiesSellerWCF.Business" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CandiesSellerWCF.Business" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="stockBusiness">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Skittles" type="xs:double" />
+      <xs:element minOccurs="0" name="Skittles_cost" type="xs:double" />
+      <xs:element minOccurs="0" name="cottoncandy" type="xs:double" />
+      <xs:element minOccurs="0" name="cottoncandy_cost" type="xs:double" />
+      <xs:element minOccurs="0" name="creamegg" type="xs:double" />
+      <xs:element minOccurs="0" name="creamegg_cost" type="xs:double" />
+      <xs:element minOccurs="0" name="jawbreaker" type="xs:double" />
+      <xs:element minOccurs="0" name="jawbreaker_cost" type="xs:double" />
+      <xs:element minOccurs="0" name="redvinelicornes" type="xs:double" />
+      <xs:element minOccurs="0" name="redvinelicornes_cost" type="xs:double" />
+      <xs:element minOccurs="0" name="sugardaddy" type="xs:double" />
+      <xs:element minOccurs="0" name="sugardaddy_cost" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="stockBusiness" nillable="true" type="tns:stockBusiness" />
+  <xs:complexType name="priceBusiness">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Skittle_price" type="xs:int" />
+      <xs:element minOccurs="0" name="cottoncandy_price" type="xs:int" />
+      <xs:element minOccurs="0" name="creamegg_price" type="xs:int" />
+      <xs:element minOccurs="0" name="jawbreaker_price" type="xs:int" />
+      <xs:element minOccurs="0" name="redvinelicornes_price" type="xs:int" />
+      <xs:element minOccurs="0" name="sugardaddy_price" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="priceBusiness" nillable="true" type="tns:priceBusiness" />
+  <xs:complexType name="userBusiness">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adresse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="prenom" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="userBusiness" nillable="true" type="tns:userBusiness" />
+  <xs:complexType name="Panier">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PricePanier" type="xs:double" />
+      <xs:element minOccurs="0" name="QCottonCandy" type="xs:double" />
+      <xs:element minOccurs="0" name="QCreamEgg" type="xs:double" />
+      <xs:element minOccurs="0" name="QJawbreaker" type="xs:double" />
+      <xs:element minOccurs="0" name="QRedvinesLicornes" type="xs:double" />
+      <xs:element minOccurs="0" name="QSkittles" type="xs:double" />
+      <xs:element minOccurs="0" name="QSugarDaddy" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Panier" nillable="true" type="tns:Panier" />
+</xs:schema>

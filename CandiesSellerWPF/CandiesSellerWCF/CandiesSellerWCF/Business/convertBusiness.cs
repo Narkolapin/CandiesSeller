@@ -89,31 +89,31 @@ namespace CandiesSellerWCF.Business
          * *************************/
 
 
-        public static order toOrder(orderBusiness uneOrder)
+        public static order toOrder(Panier uneOrder)
         {
             order uneOrderData = new order()
             {
-                cottoncandy = uneOrder.cottoncandy,
-                creamegg = uneOrder.creamegg,
-                jawbreaker = uneOrder.jawbreaker,
-                redvinelicornes = uneOrder.redvinelicornes,
-                Skittles = uneOrder.Skittles,
-                sugardaddy = uneOrder.sugardaddy
+                cottoncandy = uneOrder.QCottonCandy,
+                creamegg = uneOrder.QCreamEgg,
+                jawbreaker = uneOrder.QJawbreaker,
+                redvinelicornes = uneOrder.QRedvinesLicornes,
+                Skittles = uneOrder.QSkittles,
+                sugardaddy = uneOrder.QSugarDaddy
             };
 
             return uneOrderData;
         }
 
-        public static orderBusiness toOrderBusiness(order uneOrder)
+        public static Panier toOrderBusiness(order uneOrder)
         {
-            orderBusiness uneOrderBusiness = new orderBusiness()
+            Panier uneOrderBusiness = new Panier()
             {
-                cottoncandy = uneOrder.cottoncandy,
-                creamegg = uneOrder.creamegg,
-                jawbreaker = uneOrder.jawbreaker,
-                redvinelicornes = uneOrder.redvinelicornes,
-                Skittles = uneOrder.Skittles,
-                sugardaddy = uneOrder.sugardaddy
+                QCottonCandy  = uneOrder.cottoncandy,
+                QCreamEgg = uneOrder.creamegg,
+                QJawbreaker = uneOrder.jawbreaker,
+                QRedvinesLicornes = uneOrder.redvinelicornes,
+                QSkittles = uneOrder.Skittles,
+                QSugarDaddy = uneOrder.sugardaddy
             };
 
             return uneOrderBusiness;

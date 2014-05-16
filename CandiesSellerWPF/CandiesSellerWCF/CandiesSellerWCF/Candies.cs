@@ -47,7 +47,7 @@ namespace CandiesSellerWCF
         /// <param name="jawbreaker_d">Type int nbr de jawbreaker</param>
         /// <param name="redvinelicornes_d">Type int nbr de redvinelicornes</param>
         /// <param name="sugardaddy_d">Type int nbr de sugardaddy</param>
-        public bool setStock(int Skittles_d, int cottoncandy_d, int creamegg_d, int jawbreaker_d, int redvinelicornes_d, int sugardaddy_d)
+        public bool setStock(double Skittles_d, double cottoncandy_d, double creamegg_d, double jawbreaker_d, double redvinelicornes_d, double sugardaddy_d)
         {
             stockBusiness leStock2 = new stockBusiness()
             {
@@ -89,7 +89,7 @@ namespace CandiesSellerWCF
         }
 
 
-        public bool setOrder(userBusiness unUser, orderBusiness uneOrder)
+        public bool setOrder(userBusiness unUser, Panier uneOrder)
         {
             return monControlleur.setOrder(unUser, uneOrder);
         }

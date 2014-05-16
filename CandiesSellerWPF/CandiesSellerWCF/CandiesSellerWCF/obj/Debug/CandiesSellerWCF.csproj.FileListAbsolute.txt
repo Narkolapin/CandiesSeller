@@ -15,3 +15,4 @@ C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\Candie
 C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\bin\Debug\fr\EntityFramework.resources.dll
 C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.dll
 C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.pdb
+C:\Users\Adrix\Documents\Visual Studio 2012\Projects\CandiesSellerProject\CandiesSellerWPF\CandiesSellerWCF\CandiesSellerWCF\obj\Debug\CandiesSellerWCF.csprojResolveAssemblyReference.cache

@@ -15,12 +15,12 @@ namespace CandiesSellerWCF.Data
     public partial class order
     {
         public int Id { get; set; }
-        public int Skittles { get; set; }
-        public int cottoncandy { get; set; }
-        public int creamegg { get; set; }
-        public int jawbreaker { get; set; }
-        public int redvinelicornes { get; set; }
-        public int sugardaddy { get; set; }
+        public double Skittles { get; set; }
+        public double cottoncandy { get; set; }
+        public double creamegg { get; set; }
+        public double jawbreaker { get; set; }
+        public double redvinelicornes { get; set; }
+        public double sugardaddy { get; set; }
         public int id_user { get; set; }
     
         public virtual user user { get; set; }
